@@ -1,5 +1,5 @@
 # web-design
-#CSS + Js, hover effects, animation CSS + JS. 
+#CSS + Js, hover effects, animation. 
 
 #Далее
 Примеры разметки, использования простых скриптов 
