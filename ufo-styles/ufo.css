@@ -1,7 +1,10 @@
- .carousel-item {  
+/*немного позже - подробные коментарии */
+
+
+.carousel-item {  
         min-height: 333px;
     }
-    .bg-index {
+    .bg-index { /*если нужен фон*/
         background:url(img_bg/img3.jpg) no-repeat center center;
         background-size:cover;
         background-attachment:scroll;
@@ -73,13 +76,13 @@
     }
    
     
-     .btn-outline-w.selected {
+     .btn-outline-w.selected { /*Класс селектэд добавляется простым JS скриптом после нажатия */
      color:green;
        background:rgba(250,250,250,0.75);
        color:green;
        border:1px solid black;
      }
-     .btn-outline-w.selected i:before {
+     .btn-outline-w.selected i:before { /*После нажатия на кнопку - стилизуем ее как кнопку "закрыть" */
          font-family: 'FontAwesome';
          color:#458815;
          font-size:125%;
@@ -99,7 +102,7 @@
         background:rgba(250,250,250,0.75);
     }
 /*
-    Just Colorbox Core Style:
+    Колобокс если подключен - стилиуем по-своему
 */
 #colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
 #cboxWrapper {max-width:none;}
@@ -115,9 +118,7 @@
 #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
 
 /* 
-    User Style:
-    Change the following styles to modify the appearance of Colorbox.  They are
-    ordered & tabbed in a way that represents the nesting of the generated HTML.
+   
 */
 #cboxOverlay{background:#fff; opacity: 0.9; filter: alpha(opacity = 90);}
 #colorbox{outline:0;}
@@ -130,10 +131,10 @@
         #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
 
-        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+       
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(images/controls.png) no-repeat 0 0;}
         
-        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+      
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
         #cboxPrevious{background-position:0px 0px; right:44px;}
@@ -179,8 +180,8 @@
 }
 #menu-top.top-nav-collapse {
   
-}
-.cb-slideshow,
+} 
+.cb-slideshow, /*Фоновое слайдшоу */
 .cb-slideshow:after{
     position: fixed;
     width: 100%;
@@ -312,7 +313,7 @@
     animation-delay: 30s;
 }
 
-@-webkit-keyframes imageAnimation { 
+@-webkit-keyframes imageAnimation { /*анимация появления картинок фонового слайдшоу */
 	0% {
 	    opacity: 0;
 	    -webkit-animation-timing-function: ease-in;
@@ -412,7 +413,7 @@
 	}
 	100% { opacity: 0 }
 }
-.pulsate {
+.pulsate { /*анимация "блеск" */
 -webkit-animation: pulsatecall 1.2s linear infinite;
   animation: pulsatecall 1.2s linear infinite;    
 
@@ -603,7 +604,7 @@ box-shadow:         -1px 1px 15px 0px ;
     font-size:175%;
     
 }
-.promo{
+.promo{ /*анимация появления блока CSS after, before*/
     margin:7px;
     transition:all 0.5s;
     border-top-left-radius:7px;
@@ -674,7 +675,7 @@ box-shadow: 0px 0px 30px 6px #242424;
 .promo > span {
         position: relative;
 }
-.hidden-menu  {
+.hidden-menu  { /*Меню появляется после нажатия на кнопку.  */
    
     top:5%;
     left:125%;
@@ -740,10 +741,7 @@ color:#01fed1;
 font-weight:bold;
 
 }
-@webkit-keyframes width{
 
-    
-}
 @keyframes width {
    1%{
         width:1px;
@@ -763,7 +761,7 @@ body{
 .hidden-menu .pulsate-fa {
     animation-iteration-count: 3;
 }
-.sc-top {
+.sc-top { /*кнопка "вверх" для сайта скрыта */
     position:fixed;
     top:85%;
     left:93%;
@@ -771,7 +769,7 @@ body{
     z-index:100;
     
 }
-.sc-top.visible {
+.sc-top.visible { /*При помощи простого JS добавляем класс визибл и показываем кнопку*/
     
    
     display:block;
